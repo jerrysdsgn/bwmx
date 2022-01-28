@@ -1,0 +1,42 @@
+.hero-body {
+  padding: 3rem 3rem;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.spacer {
+  margin-top: 130px;
+}
+.feat .column:not(:last-child) {
+  border-right: 1px solid black;
+}
+.feat div {
+  font-size: 0.9em;
+}
+.extra-images li {
+  display: inline-block;
+  cursor: pointer;
+}
+footer {
+  background: lightgray;
+}
+
+footer li {
+  font-size: 0.8em;
+}
+
+footer hr {
+  background-color: #141414;
+}
+
+/*
+#mainImg{
+  display: none;
+}
+*/
+
+.thumb-img {
+  height: 120px;
+  width: auto;
+}

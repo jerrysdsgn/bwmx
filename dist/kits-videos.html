@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Category name</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .hero-body {
+            padding: 3rem 3rem;
+        }
+        .wrapper{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .spacer{
+          margin-top: 130px;
+        }
+        .feat .column:not(:last-child){
+          border-right: 1px solid black;
+        }
+        .feat div{
+          font-size: 0.9em;
+        }
+        .extra-images li{
+          display: inline-block;
+          cursor: pointer;
+        }
+        footer{
+            background: lightgray;
+        }
+
+        footer hr{
+            background-color: #141414;
+        }
+
+        #mainImg{
+          display: none;
+        }
+
+        .thumb-img{
+          height: 120px;
+          width: auto;
+        }
+    </style>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+  </head>
+  <body>
+
+  <div class="wrapper">
+    
+
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-5">
+                        <h1 class="title is-1">
+                          Lean Kit
+                        </h1>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. 
+                        </p>
+                        <br />
+                        <div class="notification">
+                          <div class="feat columns is-vcentered has-text-centered">
+                              <div class="column">
+                                <img class="thumb-img" src="./Img/Mass/noBg/weight-vest-2-removebg-preview.png" alt="">
+                              </div>
+                          </div>
+                        </div>
+                        <div class="notification">
+                          <div class="feat columns is-vcentered has-text-centered">
+                              <div class="column">
+                                <img class="thumb-img" src="./Img/Mass/noBg/weightVest-removebg-preview.png" alt="">
+                              </div>
+                          </div>
+                        </div>
+                        <br />
+                        <button class="button is-outlined"><ion-icon size="small" name="logo-amazon"></ion-icon>&nbsp;&nbsp;Comprar producto</button>
+                    </div>
+                    <div class="column is-offset-1">
+                      <video id="mainvid" muted autoplay loop src="./video/video.mp4"></video>
+                      <img id="mainImg" src="Img/resistance.png">
+                        <hr>
+                        <ul class="extra-images">
+                          <li id="imgOne">
+                            <figure class="image is-128x128">
+                              <img id="imgOneSrc" src="Img/Lean/jump-use.png">
+                            </figure>
+                          </li>
+                          <li id="imgTwo">
+                            <figure class="image is-128x128">
+                              <img id="imgTwoSrc" src="Img/Lean/resistance-use.png">
+                            </figure>
+                          </li>
+                          <li id="imgThree">
+                            <figure class="image is-128x128">
+                              <img id="imgThreeSrc" src="Img/Lean/sweiss-ball-use.png">
+                            </figure>
+                          </li>
+                          <li id="imgFour">
+                            <figure class="image is-128x128">
+                              <img id="imgFourSrc" src="Img/lean.png">
+                            </figure>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+  </div>
+
+  <footer>
+      <div class="hero-body wrapper">
+          <div class="columns is-vcentered">
+              <div class="column is-4 intro-desc">
+                  <!--<h4 style="margin-bottom: 10px;" class="title is-6 is-uppercase">presentación con imagen</h4>-->
+                  <h2 class="title is-3">Footer info</h2>
+                  <p style="font-size: 0.8em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laboriosam vel sit laborum unde placeat repudiandae aliquid tempora soluta optio, obcaecati facere rem dolorum ex nesciunt, deleniti quas provident minima.</p>
+                  <br />
+              </div>
+              <div class="column is-offset-1">
+                  <h2 style="margin-bottom: 10px;" class="subtitle is-5">Profesionales</h2>
+                  <hr>
+                  <ul>
+                      <li><a href="#">Lorem</a></li>
+                      <li><a href="#">Lorem</a></li>
+                      <li><a href="#">Lorem</a></li>
+                      <li><a href="#">Lorem</a></li>
+                  </ul>
+              </div>
+              <div class="column">
+                  <h2 style="margin-bottom: 10px;" class="subtitle is-5">Tiendas</h2>
+                  <hr>
+                  <ul>
+                      <li><a href="#">Lorem</a></li>
+                      <li><a href="#">Lorem</a></li>
+                      <li><a href="#">Lorem</a></li>
+                      <li><a href="#">Lorem</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+  </div>
+  <script>
+
+    var imgOne = document.getElementById("imgOne");
+    //var imgOneSrc = document.getElementById("imgOneSrc").src;
+      imgOne.addEventListener('click', function(){
+      document.getElementById("mainvid").src = './video/video.mp4';
+      document.getElementById("mainImg").style.display = "none";
+      document.getElementById("mainvid").style.display = "block";
+    });
+
+    var imgTwo = document.getElementById("imgTwo");
+    //var imgTwoSrc = document.getElementById("imgTwoSrc").src;
+      imgTwo.addEventListener('click', function(){
+      //document.getElementById("mainvid").src = imgTwoSrc;
+      document.getElementById("mainImg").style.display = "none";
+      document.getElementById("mainvid").style.display = "block";
+    });
+
+    var imgThree = document.getElementById("imgThree");
+    //var imgThreeSrc = document.getElementById("imgThreeSrc").src;
+      imgThree.addEventListener('click', function(){
+      //document.getElementById("mainvid").src = imgThreeSrc;
+      document.getElementById("mainImg").style.display = "none";
+      document.getElementById("mainvid").style.display = "block";
+    });
+
+    var imgFour = document.getElementById("imgFour");
+    var imgFourSrc = document.getElementById("imgFourSrc").src;
+      imgFour.addEventListener('click', function(){
+      document.getElementById("mainImg").src = imgFourSrc;
+      document.getElementById("mainImg").style.display = "block";
+      document.getElementById("mainvid").style.display = "none";
+    });
+  </script>
+  </body>
+</html>
